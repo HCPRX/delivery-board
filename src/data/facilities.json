@@ -1,0 +1,586 @@
+[
+  {
+    "id": "BRCM",
+    "name": "Brigham City Monument",
+    "addr": "775 N 200 E, Brigham City, UT 84302",
+    "barcode": "000000180993",
+    "tagLabel": "North Pole",
+    "tagColor": "#fb923c"
+  },
+  {
+    "id": "PITM",
+    "name": "Pioneer Monument",
+    "addr": "815 S 200 W, Brigham City, UT 84302",
+    "barcode": "000000205993",
+    "tagLabel": "North Pole",
+    "tagColor": "#38bdf8"
+  },
+  {
+    "id": "GARD-G",
+    "name": "Gardens - Green",
+    "addr": "1450 Ninth St, Ogden, UT 84404",
+    "barcode": "000000155991",
+    "tagLabel": "North Pole",
+    "tagColor": "#fbbf24"
+  },
+  {
+    "id": "GARD-R",
+    "name": "Gardens - Red",
+    "addr": "1450 Ninth St, Ogden, UT 84404",
+    "barcode": "000000153997",
+    "tagLabel": "North Pole",
+    "tagColor": "#fbbf24"
+  },
+  {
+    "id": "GARD-B",
+    "name": "Gardens - Blue",
+    "addr": "1450 Ninth St, Ogden, UT 84404",
+    "barcode": "000000154994",
+    "tagLabel": "North Pole",
+    "tagColor": "#fbbf24"
+  },
+  {
+    "id": "GARD-IND",
+    "name": "Gardens - Independent",
+    "addr": "1450 Ninth St, Ogden, UT 84404",
+    "barcode": "000000152990",
+    "tagLabel": "North Pole",
+    "tagColor": "#fbbf24"
+  },
+  {
+    "id": "MTOG-A",
+    "name": "Mt Ogden - A Wing",
+    "addr": "375 E 5350 S, Ogden, UT 84405",
+    "barcode": "000000112994",
+    "tagLabel": "North Pole",
+    "tagColor": "#60a5fa"
+  },
+  {
+    "id": "MTOG-B",
+    "name": "Mt Ogden - B Wing",
+    "addr": "375 E 5350 S, Ogden, UT 84405",
+    "barcode": "000000110990",
+    "tagLabel": "North Pole",
+    "tagColor": "#60a5fa"
+  },
+  {
+    "id": "MTOG-C",
+    "name": "Mt Ogden - C Wing",
+    "addr": "375 E 5350 S, Ogden, UT 84405",
+    "barcode": "000000109994",
+    "tagLabel": "North Pole",
+    "tagColor": "#60a5fa"
+  },
+  {
+    "id": "MTOG-D",
+    "name": "Mt Ogden - D Wing",
+    "addr": "375 E 5350 S, Ogden, UT 84405",
+    "barcode": "000000111997",
+    "tagLabel": "North Pole",
+    "tagColor": "#60a5fa"
+  },
+  {
+    "id": "PETE-AL",
+    "name": "Petersen Farms - AL",
+    "addr": "6980 S 475 E, South Weber, UT 84405",
+    "barcode": "000000148993",
+    "tagLabel": "North Pole",
+    "tagColor": "#a855f7"
+  },
+  {
+    "id": "PETE-ROOST",
+    "name": "Petersen Farms - Roost",
+    "addr": "6980 S 475 E, South Weber, UT 84405",
+    "barcode": "000000150996",
+    "tagLabel": "North Pole",
+    "tagColor": "#a855f7"
+  },
+  {
+    "id": "CLIP",
+    "name": "Clinton Peaks",
+    "addr": "1404 N 2000 W, Clinton, UT 84015",
+    "barcode": "000000173995",
+    "tagLabel": "North Pole",
+    "tagColor": "#14b8a6"
+  },
+  {
+    "id": "AVIL-MT",
+    "name": "Apple Village - Mountain",
+    "addr": "2600 Hobbs View Cir, Layton, UT 84040",
+    "barcode": "000000158992",
+    "tagLabel": "North",
+    "tagColor": "#ec4899"
+  },
+  {
+    "id": "AVIL-MEMORY",
+    "name": "Apple Village - Memory",
+    "addr": "2600 Hobbs View Cir, Layton, UT 84040",
+    "barcode": "000000161992",
+    "tagLabel": "North",
+    "tagColor": "#ec4899"
+  },
+  {
+    "id": "AVIL-IND",
+    "name": "Apple Village - Independent",
+    "addr": "2600 Hobbs View Cir, Layton, UT 84040",
+    "barcode": "000000162999",
+    "tagLabel": "North",
+    "tagColor": "#ec4899"
+  },
+  {
+    "id": "AVIL-LAKEVIEW",
+    "name": "Apple Village - Lakeview",
+    "addr": "2600 Hobbs View Cir, Layton, UT 84040",
+    "barcode": "000000159999",
+    "tagLabel": "North",
+    "tagColor": "#ec4899"
+  },
+  {
+    "id": "AVIL-SKYVIEW",
+    "name": "Apple Village - Skyview",
+    "addr": "2600 Hobbs View Cir, Layton, UT 84040",
+    "barcode": "000000160995",
+    "tagLabel": "North",
+    "tagColor": "#ec4899"
+  },
+  {
+    "id": "PHEA-AL",
+    "name": "Pheasant View - AL",
+    "addr": "1242 E Pheasant View Dr, Layton, UT 84041",
+    "barcode": "000000146999",
+    "tagLabel": "North",
+    "tagColor": "#f97316"
+  },
+  {
+    "id": "PHEA-MEMORY",
+    "name": "Pheasant View - Memory",
+    "addr": "1242 E Pheasant View Dr, Layton, UT 84041",
+    "barcode": "000000145992",
+    "tagLabel": "North",
+    "tagColor": "#f97316"
+  },
+  {
+    "id": "ATRE-IND",
+    "name": "Apple Tree - Independent",
+    "addr": "565 N 300 W, Kaysville, UT 84037",
+    "barcode": "000000166997",
+    "tagLabel": "North",
+    "tagColor": "#84cc16"
+  },
+  {
+    "id": "ATRE-RED",
+    "name": "Apple Tree - Red",
+    "addr": "565 N 300 W, Kaysville, UT 84037",
+    "barcode": "000000167994",
+    "tagLabel": "North",
+    "tagColor": "#84cc16"
+  },
+  {
+    "id": "ATRE-YELLOW",
+    "name": "Apple Tree - Yellow",
+    "addr": "565 N 300 W, Kaysville, UT 84037",
+    "barcode": "000000165990",
+    "tagLabel": "North",
+    "tagColor": "#84cc16"
+  },
+  {
+    "id": "ATRE-GREEN",
+    "name": "Apple Tree - Green",
+    "addr": "565 N 300 W, Kaysville, UT 84037",
+    "barcode": "000000168991",
+    "tagLabel": "North",
+    "tagColor": "#84cc16"
+  },
+  {
+    "id": "STOM-A",
+    "name": "Stonecreek - A",
+    "addr": "523 N Main St, Bountiful, UT 84010",
+    "barcode": "000000195997",
+    "tagLabel": "North",
+    "tagColor": "#06b6d4"
+  },
+  {
+    "id": "STOM-B",
+    "name": "Stonecreek - B",
+    "addr": "523 N Main St, Bountiful, UT 84010",
+    "barcode": "000000194990",
+    "tagLabel": "North",
+    "tagColor": "#06b6d4"
+  },
+  {
+    "id": "STOM-C",
+    "name": "Stonecreek - C",
+    "addr": "523 N Main St, Bountiful, UT 84010",
+    "barcode": "000000196994",
+    "tagLabel": "North",
+    "tagColor": "#06b6d4"
+  },
+  {
+    "id": "STOM-D",
+    "name": "Stonecreek - D",
+    "addr": "523 N Main St, Bountiful, UT 84010",
+    "barcode": "STOM-D",
+    "tagLabel": "North",
+    "tagColor": "#06b6d4"
+  },
+  {
+    "id": "BCSL-IND",
+    "name": "Barton Creek - Independent",
+    "addr": "499 E 500 S, Bountiful, UT 84010",
+    "barcode": "000000172998",
+    "tagLabel": "North",
+    "tagColor": "#f97316"
+  },
+  {
+    "id": "BCSL-100",
+    "name": "Barton Creek - 100",
+    "addr": "499 E 500 S, Bountiful, UT 84010",
+    "barcode": "000000076999",
+    "tagLabel": "North",
+    "tagColor": "#f97316"
+  },
+  {
+    "id": "BCSL-200",
+    "name": "Barton Creek - 200",
+    "addr": "499 E 500 S, Bountiful, UT 84010",
+    "barcode": "000000075992",
+    "tagLabel": "North",
+    "tagColor": "#f97316"
+  },
+  {
+    "id": "BOUM-E",
+    "name": "Bountiful Monument - East",
+    "addr": "460 W 2600 S, Bountiful, UT 84010",
+    "barcode": "000000141994",
+    "tagLabel": "North",
+    "tagColor": "#8b5cf6"
+  },
+  {
+    "id": "BOUM-W",
+    "name": "Bountiful Monument - West",
+    "addr": "460 W 2600 S, Bountiful, UT 84010",
+    "barcode": "000000142991",
+    "tagLabel": "North",
+    "tagColor": "#8b5cf6"
+  },
+  {
+    "id": "CHIL-AL",
+    "name": "Capitol Hill - AL",
+    "addr": "76 S 500 E, Salt Lake City, UT 84102",
+    "barcode": "000000134996",
+    "tagLabel": "North",
+    "tagColor": "#84cc16"
+  },
+  {
+    "id": "CHIL-MEMORY",
+    "name": "Capitol Hill - Memory",
+    "addr": "76 S 500 E, Salt Lake City, UT 84102",
+    "barcode": "000000135993",
+    "tagLabel": "North",
+    "tagColor": "#84cc16"
+  },
+  {
+    "id": "SSLM A",
+    "name": "Solitude Monument A",
+    "addr": "2472 S 300 E, Salt Lake City, UT 84115",
+    "barcode": "000000214995",
+    "tagLabel": "Central",
+    "tagColor": "#10b981"
+  },
+  {
+    "id": "SSLM B",
+    "name": "Solitude Monument B",
+    "addr": "2472 S 300 E, Salt Lake City, UT 84115",
+    "barcode": "000000213998",
+    "tagLabel": "Central",
+    "tagColor": "#10b981"
+  },
+  {
+    "id": "SSLM C",
+    "name": "Solitude Monument C",
+    "addr": "2472 S 300 E, Salt Lake City, UT 84115",
+    "barcode": "000000212991",
+    "tagLabel": "Central",
+    "tagColor": "#10b981"
+  },
+  {
+    "id": "CARM B",
+    "name": "Carmel Monument B",
+    "addr": "2730 E 3300 S, Salt Lake City, UT 84109",
+    "barcode": "000000208994",
+    "tagLabel": "Central",
+    "tagColor": "#f472b6"
+  },
+  {
+    "id": "CARM C",
+    "name": "Carmel Monument C",
+    "addr": "2730 E 3300 S, Salt Lake City, UT 84109",
+    "barcode": "000000209991",
+    "tagLabel": "Central",
+    "tagColor": "#f472b6"
+  },
+  {
+    "id": "MUCM-A",
+    "name": "Murray Creek - A",
+    "addr": "3855 S 700 E, Salt Lake City, UT 84106",
+    "barcode": "000000191999",
+    "tagLabel": "Central",
+    "tagColor": "#a78bfa"
+  },
+  {
+    "id": "MUCM-R",
+    "name": "Murray Creek - R",
+    "addr": "3855 S 700 E, Salt Lake City, UT 84106",
+    "barcode": "000000187992",
+    "tagLabel": "Central",
+    "tagColor": "#a78bfa"
+  },
+  {
+    "id": "MUCM-S",
+    "name": "Murray Creek - S",
+    "addr": "3855 S 700 E, Salt Lake City, UT 84106",
+    "barcode": "000000186995",
+    "tagLabel": "Central",
+    "tagColor": "#a78bfa"
+  },
+  {
+    "id": "MUCM-T",
+    "name": "Murray Creek - T",
+    "addr": "3855 S 700 E, Salt Lake City, UT 84106",
+    "barcode": "000000188999",
+    "tagLabel": "Central",
+    "tagColor": "#a78bfa"
+  },
+  {
+    "id": "PARA-W",
+    "name": "Paramount - West",
+    "addr": "4035 S 500 E, Salt Lake City, UT 84107",
+    "barcode": "000000096997",
+    "tagLabel": "Central",
+    "tagColor": "#7c3aed"
+  },
+  {
+    "id": "PARA-E",
+    "name": "Paramount - East",
+    "addr": "4035 S 500 E, Salt Lake City, UT 84107",
+    "barcode": "000000095990",
+    "tagLabel": "Central",
+    "tagColor": "#7c3aed"
+  },
+  {
+    "id": "PARA-M",
+    "name": "Paramount - Memory",
+    "addr": "4035 S 500 E, Salt Lake City, UT 84107",
+    "barcode": "000000097994",
+    "tagLabel": "Central",
+    "tagColor": "#7c3aed"
+  },
+  {
+    "id": "MILM-100",
+    "name": "Millcreek - 100",
+    "addr": "1201 E 4500 S, Salt Lake City, UT 84117",
+    "barcode": "000000103992",
+    "tagLabel": "Central",
+    "tagColor": "#f59e0b"
+  },
+  {
+    "id": "MILM-200",
+    "name": "Millcreek - 200",
+    "addr": "1201 E 4500 S, Salt Lake City, UT 84117",
+    "barcode": "000000105996",
+    "tagLabel": "Central",
+    "tagColor": "#f59e0b"
+  },
+  {
+    "id": "MILM-300",
+    "name": "Millcreek - 300",
+    "addr": "1201 E 4500 S, Salt Lake City, UT 84117",
+    "barcode": "000000102995",
+    "tagLabel": "Central",
+    "tagColor": "#f59e0b"
+  },
+  {
+    "id": "MILM-400",
+    "name": "Millcreek - 400",
+    "addr": "1201 E 4500 S, Salt Lake City, UT 84117",
+    "barcode": "000000104999",
+    "tagLabel": "Central",
+    "tagColor": "#f59e0b"
+  },
+  {
+    "id": "COCM-E",
+    "name": "Cottonwood Creek - East",
+    "addr": "1205 E Bonner Way, Salt Lake City, UT 84117",
+    "barcode": "000000182997",
+    "tagLabel": "Central",
+    "tagColor": "#10b981"
+  },
+  {
+    "id": "COCM-W",
+    "name": "Cottonwood Creek - West",
+    "addr": "1205 E Bonner Way, Salt Lake City, UT 84117",
+    "barcode": "000000183994",
+    "tagLabel": "Central",
+    "tagColor": "#10b981"
+  },
+  {
+    "id": "TAYM-B",
+    "name": "Taylorsville - B",
+    "addr": "6246 S Redwood Rd, Salt Lake City, UT 84123",
+    "barcode": "000000200998",
+    "tagLabel": "Central",
+    "tagColor": "#3b82f6"
+  },
+  {
+    "id": "TAYM-A",
+    "name": "Taylorsville - A",
+    "addr": "6246 S Redwood Rd, Salt Lake City, UT 84123",
+    "barcode": "000000199995",
+    "tagLabel": "Central",
+    "tagColor": "#3b82f6"
+  },
+  {
+    "id": "SJOP-A",
+    "name": "South Jordan Peaks - A",
+    "addr": "2664 W 11400 S, South Jordan, UT 84095",
+    "barcode": "000000170994",
+    "tagLabel": "Central",
+    "tagColor": "#ef4444"
+  },
+  {
+    "id": "SJOP-D",
+    "name": "South Jordan Peaks - D",
+    "addr": "2664 W 11400 S, South Jordan, UT 84095",
+    "barcode": "000000171991",
+    "tagLabel": "Central",
+    "tagColor": "#ef4444"
+  },
+  {
+    "id": "POIN-S",
+    "name": "Pointe Meadows - South",
+    "addr": "2750 N Digital Dr, Lehi, UT 84043",
+    "barcode": "000000089999",
+    "tagLabel": "South",
+    "tagColor": "#ec4899"
+  },
+  {
+    "id": "POIN-N",
+    "name": "Pointe Meadows - North",
+    "addr": "2750 N Digital Dr, Lehi, UT 84043",
+    "barcode": "000000090995",
+    "tagLabel": "South",
+    "tagColor": "#ec4899"
+  },
+  {
+    "id": "AMFM-A",
+    "name": "American Fork - A",
+    "addr": "350 E 300 N, American Fork, UT 84003",
+    "barcode": "000000177993",
+    "tagLabel": "South",
+    "tagColor": "#8b5cf6"
+  },
+  {
+    "id": "AMFM-D",
+    "name": "American Fork - D",
+    "addr": "350 E 300 N, American Fork, UT 84003",
+    "barcode": "000000176996",
+    "tagLabel": "South",
+    "tagColor": "#8b5cf6"
+  },
+  {
+    "id": "WHA-IND",
+    "name": "Welcome Home - Independent",
+    "addr": "1889 W 930 N, Pleasant Grove, UT 84062",
+    "barcode": "WHA-IND",
+    "tagLabel": "South",
+    "tagColor": "#06b6d4"
+  },
+  {
+    "id": "WHA-WEST",
+    "name": "Welcome Home - West",
+    "addr": "1889 W 930 N, Pleasant Grove, UT 84062",
+    "barcode": "000000124997",
+    "tagLabel": "South",
+    "tagColor": "#06b6d4"
+  },
+  {
+    "id": "WHA-EAST",
+    "name": "Welcome Home - East",
+    "addr": "1889 W 930 N, Pleasant Grove, UT 84062",
+    "barcode": "000000125994",
+    "tagLabel": "South",
+    "tagColor": "#06b6d4"
+  },
+  {
+    "id": "PROV-100",
+    "name": "Provo - 100",
+    "addr": "1001 N 500 W, Provo, UT 84604",
+    "barcode": "000000116992",
+    "tagLabel": "South",
+    "tagColor": "#6366f1"
+  },
+  {
+    "id": "PROV-200",
+    "name": "Provo - 200",
+    "addr": "1001 N 500 W, Provo, UT 84604",
+    "barcode": "000000115995",
+    "tagLabel": "South",
+    "tagColor": "#6366f1"
+  },
+  {
+    "id": "PROV-300",
+    "name": "Provo - 300",
+    "addr": "1001 N 500 W, Provo, UT 84604",
+    "barcode": "000000114998",
+    "tagLabel": "South",
+    "tagColor": "#6366f1"
+  },
+  {
+    "id": "PROV-400",
+    "name": "Provo - 400",
+    "addr": "1001 N 500 W, Provo, UT 84604",
+    "barcode": "000000120999",
+    "tagLabel": "South",
+    "tagColor": "#6366f1"
+  },
+  {
+    "id": "PROV-500",
+    "name": "Provo - 500",
+    "addr": "1001 N 500 W, Provo, UT 84604",
+    "barcode": "000000119993",
+    "tagLabel": "South",
+    "tagColor": "#6366f1"
+  },
+  {
+    "id": "PROV-600",
+    "name": "Provo - 600",
+    "addr": "1001 N 500 W, Provo, UT 84604",
+    "barcode": "000000118996",
+    "tagLabel": "South",
+    "tagColor": "#6366f1"
+  },
+  {
+    "id": "ASHS-IND",
+    "name": "Ashford - Independent",
+    "addr": "333 S 950 W, Springville, UT 84663",
+    "barcode": "000000131995",
+    "tagLabel": "South",
+    "tagColor": "#f43f5e"
+  },
+  {
+    "id": "ASHS-AL",
+    "name": "Ashford - AL",
+    "addr": "333 S 950 W, Springville, UT 84663",
+    "barcode": "000000129992",
+    "tagLabel": "South",
+    "tagColor": "#f43f5e"
+  },
+  {
+    "id": "ASHS-MEM",
+    "name": "Ashford - Memory",
+    "addr": "333 S 950 W, Springville, UT 84663",
+    "barcode": "000000130998",
+    "tagLabel": "South",
+    "tagColor": "#f43f5e"
+  }
+]
