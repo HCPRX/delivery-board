@@ -54,6 +54,9 @@ export default function App() {
     visible.forEach((f) => {
       ;(byZone[f.tagLabel] = byZone[f.tagLabel] || []).push(f)
     })
+    Object.values(byZone).forEach((items) =>
+      items.sort((a, b) => a.id.localeCompare(b.id, undefined, { numeric: true })),
+    )
     return ZONE_ORDER.filter((z) => byZone[z]).map((z) => [z, byZone[z]])
   }, [visible])
 
