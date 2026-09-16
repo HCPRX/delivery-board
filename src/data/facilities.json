@@ -193,7 +193,7 @@
   },
   {
     "id": "STOM-A",
-    "name": "Stonecreek - A",
+    "name": "Stonecreek - Hall 100",
     "addr": "523 N Main St, Bountiful, UT 84010",
     "barcode": "000000195997",
     "tagLabel": "North",
@@ -201,7 +201,7 @@
   },
   {
     "id": "STOM-B",
-    "name": "Stonecreek - B",
+    "name": "Stonecreek - Hall 200",
     "addr": "523 N Main St, Bountiful, UT 84010",
     "barcode": "000000194990",
     "tagLabel": "North",
@@ -209,17 +209,9 @@
   },
   {
     "id": "STOM-C",
-    "name": "Stonecreek - C",
+    "name": "Stonecreek - Hall 300 & 400",
     "addr": "523 N Main St, Bountiful, UT 84010",
     "barcode": "000000196994",
-    "tagLabel": "North",
-    "tagColor": "#06b6d4"
-  },
-  {
-    "id": "STOM-D",
-    "name": "Stonecreek - D",
-    "addr": "523 N Main St, Bountiful, UT 84010",
-    "barcode": "STOM-D",
     "tagLabel": "North",
     "tagColor": "#06b6d4"
   },
@@ -448,14 +440,6 @@
     "tagColor": "#ef4444"
   },
   {
-    "id": "SJOP-D",
-    "name": "South Jordan Peaks - D",
-    "addr": "2664 W 11400 S, South Jordan, UT 84095",
-    "barcode": "000000171991",
-    "tagLabel": "Central",
-    "tagColor": "#ef4444"
-  },
-  {
     "id": "POIN-S",
     "name": "Pointe Meadows - South",
     "addr": "2750 N Digital Dr, Lehi, UT 84043",
@@ -582,5 +566,299 @@
     "barcode": "000000130998",
     "tagLabel": "South",
     "tagColor": "#f43f5e"
+  },
+  {
+    "id": "AAS",
+    "barcode": "AAS",
+    "tagLabel": "Unassigned",
+    "tagColor": "#6b7280"
+  },
+  {
+    "id": "ACS",
+    "barcode": "ACS",
+    "tagLabel": "Unassigned",
+    "tagColor": "#6b7280"
+  },
+  {
+    "id": "AHTM",
+    "barcode": "AHTM",
+    "tagLabel": "Unassigned",
+    "tagColor": "#6b7280"
+  },
+  {
+    "id": "APHC",
+    "barcode": "APHC",
+    "tagLabel": "Unassigned",
+    "tagColor": "#6b7280"
+  },
+  {
+    "id": "AUMA",
+    "barcode": "AUMA",
+    "tagLabel": "Unassigned",
+    "tagColor": "#6b7280"
+  },
+  {
+    "id": "BFF",
+    "barcode": "BFF",
+    "tagLabel": "Unassigned",
+    "tagColor": "#6b7280"
+  },
+  {
+    "id": "BRF",
+    "barcode": "BRF",
+    "tagLabel": "Unassigned",
+    "tagColor": "#6b7280"
+  },
+  {
+    "id": "BRID",
+    "barcode": "BRID",
+    "tagLabel": "Unassigned",
+    "tagColor": "#6b7280"
+  },
+  {
+    "id": "BSS",
+    "barcode": "BSS",
+    "tagLabel": "Unassigned",
+    "tagColor": "#6b7280"
+  },
+  {
+    "id": "CFS",
+    "barcode": "CFS",
+    "tagLabel": "Unassigned",
+    "tagColor": "#6b7280"
+  },
+  {
+    "id": "CROS",
+    "barcode": "CROS",
+    "tagLabel": "Unassigned",
+    "tagColor": "#6b7280"
+  },
+  {
+    "id": "KRS",
+    "barcode": "KRS",
+    "tagLabel": "Unassigned",
+    "tagColor": "#6b7280"
+  },
+  {
+    "id": "DEV",
+    "barcode": "DEV",
+    "tagLabel": "Unassigned",
+    "tagColor": "#6b7280"
+  },
+  {
+    "id": "DUUT",
+    "barcode": "DUUT",
+    "tagLabel": "Unassigned",
+    "tagColor": "#6b7280"
+  },
+  {
+    "id": "ENC1",
+    "barcode": "ENC1",
+    "tagLabel": "Unassigned",
+    "tagColor": "#6b7280"
+  },
+  {
+    "id": "EUR",
+    "barcode": "EUR",
+    "tagLabel": "Unassigned",
+    "tagColor": "#6b7280"
+  },
+  {
+    "id": "FLP1",
+    "barcode": "FLP1",
+    "tagLabel": "Unassigned",
+    "tagColor": "#6b7280"
+  },
+  {
+    "id": "FMS",
+    "barcode": "FMS",
+    "tagLabel": "Unassigned",
+    "tagColor": "#6b7280"
+  },
+  {
+    "id": "FSDS",
+    "barcode": "FSDS",
+    "tagLabel": "Unassigned",
+    "tagColor": "#6b7280"
+  },
+  {
+    "id": "GA",
+    "barcode": "GA",
+    "tagLabel": "Unassigned",
+    "tagColor": "#6b7280"
+  },
+  {
+    "id": "HFL",
+    "barcode": "HFL",
+    "tagLabel": "Unassigned",
+    "tagColor": "#6b7280"
+  },
+  {
+    "id": "ICS",
+    "barcode": "ICS",
+    "tagLabel": "Unassigned",
+    "tagColor": "#6b7280"
+  },
+  {
+    "id": "JCH",
+    "barcode": "JCH",
+    "tagLabel": "Unassigned",
+    "tagColor": "#6b7280"
+  },
+  {
+    "id": "JLJ",
+    "barcode": "JLJ",
+    "tagLabel": "Unassigned",
+    "tagColor": "#6b7280"
+  },
+  {
+    "id": "LAU",
+    "barcode": "LAU",
+    "tagLabel": "Unassigned",
+    "tagColor": "#6b7280"
+  },
+  {
+    "id": "LHFS",
+    "barcode": "LHFS",
+    "tagLabel": "Unassigned",
+    "tagColor": "#6b7280"
+  },
+  {
+    "id": "LKRD",
+    "barcode": "LKRD",
+    "tagLabel": "Unassigned",
+    "tagColor": "#6b7280"
+  },
+  {
+    "id": "LOMA",
+    "barcode": "LOMA",
+    "tagLabel": "Unassigned",
+    "tagColor": "#6b7280"
+  },
+  {
+    "id": "MNRC",
+    "barcode": "MNRC",
+    "tagLabel": "Unassigned",
+    "tagColor": "#6b7280"
+  },
+  {
+    "id": "OPPO",
+    "barcode": "OPPO",
+    "tagLabel": "Unassigned",
+    "tagColor": "#6b7280"
+  },
+  {
+    "id": "RI3",
+    "barcode": "RI3",
+    "tagLabel": "Unassigned",
+    "tagColor": "#6b7280"
+  },
+  {
+    "id": "RIP1",
+    "barcode": "RIP1",
+    "tagLabel": "Unassigned",
+    "tagColor": "#6b7280"
+  },
+  {
+    "id": "RIP2",
+    "barcode": "RIP2",
+    "tagLabel": "Unassigned",
+    "tagColor": "#6b7280"
+  },
+  {
+    "id": "RIP3",
+    "barcode": "RIP3",
+    "tagLabel": "Unassigned",
+    "tagColor": "#6b7280"
+  },
+  {
+    "id": "RIP4",
+    "barcode": "RIP4",
+    "tagLabel": "Unassigned",
+    "tagColor": "#6b7280"
+  },
+  {
+    "id": "RIP5",
+    "barcode": "RIP5",
+    "tagLabel": "Unassigned",
+    "tagColor": "#6b7280"
+  },
+  {
+    "id": "RIP6",
+    "barcode": "RIP6",
+    "tagLabel": "Unassigned",
+    "tagColor": "#6b7280"
+  },
+  {
+    "id": "RIP7",
+    "barcode": "RIP7",
+    "tagLabel": "Unassigned",
+    "tagColor": "#6b7280"
+  },
+  {
+    "id": "RIP8",
+    "barcode": "RIP8",
+    "tagLabel": "Unassigned",
+    "tagColor": "#6b7280"
+  },
+  {
+    "id": "RIR2",
+    "barcode": "RIR2",
+    "tagLabel": "Unassigned",
+    "tagColor": "#6b7280"
+  },
+  {
+    "id": "RS1",
+    "barcode": "RS1",
+    "tagLabel": "Unassigned",
+    "tagColor": "#6b7280"
+  },
+  {
+    "id": "RT",
+    "barcode": "RT",
+    "tagLabel": "Unassigned",
+    "tagColor": "#6b7280"
+  },
+  {
+    "id": "SC1",
+    "barcode": "SC1",
+    "tagLabel": "Unassigned",
+    "tagColor": "#6b7280"
+  },
+  {
+    "id": "TWIN",
+    "barcode": "TWIN",
+    "tagLabel": "Unassigned",
+    "tagColor": "#6b7280"
+  },
+  {
+    "id": "UFS",
+    "barcode": "UFS",
+    "tagLabel": "Unassigned",
+    "tagColor": "#6b7280"
+  },
+  {
+    "id": "UNI",
+    "barcode": "UNI",
+    "tagLabel": "Unassigned",
+    "tagColor": "#6b7280"
+  },
+  {
+    "id": "UFW",
+    "barcode": "UFW",
+    "tagLabel": "Unassigned",
+    "tagColor": "#6b7280"
+  },
+  {
+    "id": "WEL0",
+    "barcode": "WEL0",
+    "tagLabel": "Unassigned",
+    "tagColor": "#6b7280"
+  },
+  {
+    "id": "WEL2",
+    "barcode": "WEL2",
+    "tagLabel": "Unassigned",
+    "tagColor": "#6b7280"
   }
 ]

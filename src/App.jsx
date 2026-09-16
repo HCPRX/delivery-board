@@ -22,7 +22,7 @@ export default function App() {
     if (!q) return facilities
     return facilities.filter(
       (f) =>
-        f.name.toLowerCase().includes(q) ||
+        (f.name || '').toLowerCase().includes(q) ||
         f.tagLabel.toLowerCase().includes(q) ||
         f.id.toLowerCase().includes(q),
     )
@@ -66,7 +66,7 @@ export default function App() {
               >
                 {f.tagLabel}
               </div>
-              <div className="card__label">{f.name}</div>
+              <div className="card__label">{f.id}</div>
               <div className="card__barcode">
                 <Barcode value={f.barcode} height={40} />
               </div>
@@ -85,7 +85,7 @@ export default function App() {
             >
               ×
             </button>
-            <div className="modal__label">{selected.name}</div>
+            <div className="modal__label">{selected.id}</div>
             {selected.addr && <div className="modal__addr">{selected.addr}</div>}
             <div className="modal__barcode">
               <Barcode value={selected.barcode} height={80} />
