@@ -344,30 +344,6 @@
     "tagColor": "#a78bfa"
   },
   {
-    "id": "PARA-W",
-    "name": "Paramount - West",
-    "addr": "4035 S 500 E, Salt Lake City, UT 84107",
-    "barcode": "000000096997",
-    "tagLabel": "Central",
-    "tagColor": "#7c3aed"
-  },
-  {
-    "id": "PARA-E",
-    "name": "Paramount - East",
-    "addr": "4035 S 500 E, Salt Lake City, UT 84107",
-    "barcode": "000000095990",
-    "tagLabel": "Central",
-    "tagColor": "#7c3aed"
-  },
-  {
-    "id": "PARA-M",
-    "name": "Paramount - Memory",
-    "addr": "4035 S 500 E, Salt Lake City, UT 84107",
-    "barcode": "000000097994",
-    "tagLabel": "Central",
-    "tagColor": "#7c3aed"
-  },
-  {
     "id": "MILM-100",
     "name": "Millcreek - 100",
     "addr": "1201 E 4500 S, Salt Lake City, UT 84117",
@@ -860,5 +836,13 @@
     "barcode": "WEL2",
     "tagLabel": "Unassigned",
     "tagColor": "#6b7280"
+  },
+  {
+    "id": "TAYM-C",
+    "name": "Taylorsville - C",
+    "addr": "6246 S Redwood Rd, Salt Lake City, UT 84123",
+    "barcode": "TAYM-C",
+    "tagLabel": "Central",
+    "tagColor": "#3b82f6"
   }
 ]
