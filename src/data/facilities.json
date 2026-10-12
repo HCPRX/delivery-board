@@ -802,12 +802,6 @@
     "tagColor": "#6b7280"
   },
   {
-    "id": "TWIN",
-    "barcode": "TWIN",
-    "tagLabel": "Unassigned",
-    "tagColor": "#6b7280"
-  },
-  {
     "id": "UFS",
     "barcode": "UFS",
     "tagLabel": "Unassigned",
@@ -844,5 +838,19 @@
     "barcode": "TAYM-C",
     "tagLabel": "Central",
     "tagColor": "#3b82f6"
+  },
+  {
+    "id": "TWIN-AL",
+    "name": "Twin Oaks - AL",
+    "barcode": "TWIN-AL",
+    "tagLabel": "Central",
+    "tagColor": "#06b6d4"
+  },
+  {
+    "id": "TWIN-MEM",
+    "name": "Twin Oaks - Memory",
+    "barcode": "TWIN-MEM",
+    "tagLabel": "Central",
+    "tagColor": "#06b6d4"
   }
 ]
