@@ -64,6 +64,104 @@ body {
   color: #8a8d99;
 }
 
+.addstopbtn {
+  font: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: 1px solid #7c8cff;
+  background: rgba(124, 140, 255, 0.12);
+  color: #dfe2ff;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.addstopbtn:hover {
+  background: rgba(124, 140, 255, 0.22);
+}
+
+.addstopbtn:focus {
+  outline: none;
+}
+
+.addstopbtn:focus-visible {
+  outline: 3px solid #f2c94c;
+  outline-offset: 3px;
+}
+
+.board__notice {
+  margin: 14px 20px 0;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #5c4a1f;
+  background: rgba(242, 201, 76, 0.08);
+  color: #e8cf8a;
+  font-size: 13px;
+}
+
+.board__zonebar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 14px 20px 0;
+}
+
+.zonebtn {
+  font: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: 1px solid #33373f;
+  background: #1b1e24;
+  color: #b5b8c2;
+  cursor: pointer;
+}
+
+.zonebtn:hover {
+  border-color: #7c8cff;
+}
+
+.zonebtn[aria-pressed='true'] {
+  background: rgba(124, 140, 255, 0.15);
+  border-color: #7c8cff;
+  color: #dfe2ff;
+}
+
+.zonebtn:focus {
+  outline: none;
+}
+
+.zonebtn:focus-visible {
+  outline: 3px solid #f2c94c;
+  outline-offset: 3px;
+}
+
+.board__zone {
+  padding: 10px 20px 0;
+}
+
+.board__zone-title {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #dfe1e8;
+}
+
+.board__zone-title span {
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: none;
+  letter-spacing: normal;
+  color: #8a8d99;
+}
+
 .board__grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 220px));
@@ -92,6 +190,10 @@ body {
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
 }
 
+.card:focus {
+  outline: none;
+}
+
 .card:focus-visible {
   outline: 3px solid #7c8cff;
   outline-offset: 2px;
@@ -107,6 +209,7 @@ body {
 }
 
 .card__label {
+  position: relative;
   flex: 1;
   padding: 14px 10px;
   min-height: 36px;
@@ -115,6 +218,16 @@ body {
   justify-content: center;
   font-weight: 600;
   text-align: center;
+}
+
+.card__custom-dot {
+  position: absolute;
+  top: 6px;
+  right: 8px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #7c8cff;
 }
 
 .card__barcode {
@@ -190,6 +303,86 @@ body {
   background: #fff;
   padding: 16px;
   border-radius: 8px;
+}
+
+.addform {
+  text-align: left;
+}
+
+.addform__title {
+  margin: 0 0 4px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.addform__hint {
+  margin: 0 0 20px;
+  font-size: 13px;
+  color: #9aa0ac;
+}
+
+.addform__field {
+  display: block;
+  margin-bottom: 14px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #b5b8c2;
+}
+
+.addform__field span {
+  font-weight: 400;
+  color: #767a86;
+}
+
+.addform__field input,
+.addform__field select {
+  display: block;
+  width: 100%;
+  margin-top: 6px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #33373f;
+  background: #14161b;
+  color: #f5f5f7;
+  font-size: 15px;
+  font-family: inherit;
+}
+
+.addform__field input:focus,
+.addform__field select:focus {
+  outline: none;
+  border-color: #7c8cff;
+}
+
+.addform__error {
+  margin: 0 0 14px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: rgba(239, 68, 68, 0.12);
+  border: 1px solid #7a2e2e;
+  color: #f3a9a9;
+  font-size: 13px;
+}
+
+.addform__submit {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background: #7c8cff;
+  color: #14161b;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.addform__submit:hover {
+  background: #93a1ff;
+}
+
+.addform__submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
 }
 
 @media (max-width: 600px) {
