@@ -1,16 +1,20 @@
 // Serverless API for user-added stops ("Add a stop" feature).
 //
-// Vercel auto-detects any file under /api as a Function, regardless of the
-// frontend framework, so this file runs on Vercel's servers (not in the
-// browser) even though the rest of the project is a plain Vite app.
+// Vercel auto-detects any file under /api (at the project root, next to
+// src/, not inside it) as a Function, regardless of the frontend
+// framework, so this file runs on Vercel's servers (not in the browser)
+// even though the rest of the project is a plain Vite app.
 //
 // Storage: Upstash Redis, connected through the Vercel Marketplace. See
 // README.md ("Adding a stop — shared database setup") for the one-time
 // dashboard steps. Everything a visitor adds is stored as a single JSON
 // list under one Redis key, so it's simple and has no schema/migrations.
 //
-// No login is required to add a stop (by design, same as the rest of the
-// board) — anyone with the site's URL can add or see stops.
+// No login is required to add or delete a stop (by design, same as the
+// rest of the board) — anyone with the site's URL can add, see, or
+// remove a stop. Only stops added through the app live in this list and
+// can be deleted here — the built-in facilities.json list is baked into
+// the site at build time and isn't touched by this file.
 
 import { Redis } from '@upstash/redis'
 import { readFileSync } from 'node:fs'
@@ -44,6 +48,15 @@ function getRedis() {
 
 function badRequest(res, message) {
   res.status(400).json({ error: message })
+}
+
+// Both POST and DELETE can send an id either as a JSON body or (for DELETE,
+// since some callers prefer not to send a body) a query string — accept
+// either so the frontend has a simple, reliable way to call it.
+function readId(req) {
+  const fromBody = req.body && req.body.id
+  const fromQuery = req.query && req.query.id
+  return String(fromBody || fromQuery || '').trim().toUpperCase()
 }
 
 export default async function handler(req, res) {
@@ -100,7 +113,31 @@ export default async function handler(req, res) {
     return
   }
 
-  res.setHeader('Allow', 'GET, POST')
+  if (req.method === 'DELETE') {
+    const id = readId(req)
+    if (!id) return badRequest(res, 'A stop ID is required.')
+
+    if (BASE_IDS.has(id)) {
+      return badRequest(
+        res,
+        'Built-in stops can\'t be deleted from the app — only stops added through "+ Add a stop".',
+      )
+    }
+
+    const stops = (await redis.get(STOPS_KEY)) || []
+    const next = stops.filter((s) => s.id !== id)
+
+    if (next.length === stops.length) {
+      res.status(404).json({ error: `No stop called "${id}" was found.` })
+      return
+    }
+
+    await redis.set(STOPS_KEY, next)
+    res.status(200).json({ ok: true, id })
+    return
+  }
+
+  res.setHeader('Allow', 'GET, POST, DELETE')
   res.status(405).json({ error: 'Method not allowed' })
 }
 

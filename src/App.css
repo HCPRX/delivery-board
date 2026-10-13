@@ -394,3 +394,27 @@ body {
     padding: 16px 12px;
   }
 }
+
+.modal__delete {
+  display: block;
+  width: 100%;
+  margin-top: 16px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #7a2e2e;
+  background: rgba(239, 68, 68, 0.1);
+  color: #f3a9a9;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.modal__delete:hover {
+  background: rgba(239, 68, 68, 0.2);
+}
+
+.modal__delete:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

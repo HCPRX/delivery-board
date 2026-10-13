@@ -14,7 +14,9 @@ import baseFacilities from './data/facilities.json'
 // at build time. On top of that, anyone can add a stop through the "+ Add
 // a stop" button; those go into a small shared database (see README.md)
 // and show up live for everyone, same as the built-in stops — no reload,
-// rebuild, or redeploy needed.
+// rebuild, or redeploy needed. A stop added this way can also be removed
+// again (click it, "Delete stop") — built-in stops can't be, since
+// they're part of the site itself rather than the shared database.
 
 // Fixed display order for zones — new facilities always render inside
 // their zone's section, never tacked onto the end of the board.
@@ -35,6 +37,9 @@ export default function App() {
   const [form, setForm] = useState(EMPTY_FORM)
   const [submitting, setSubmitting] = useState(false)
   const [formError, setFormError] = useState('')
+
+  const [deleting, setDeleting] = useState(false)
+  const [deleteError, setDeleteError] = useState('')
 
   // Pull in anything the team has already added through the app, so a
   // stop someone added from another device shows up here too.
@@ -143,6 +148,32 @@ export default function App() {
     }
   }
 
+  async function handleDeleteStop() {
+    if (!selected || !selected.custom) return
+    if (!window.confirm(`Remove "${selected.id}" from the board? This can't be undone.`)) {
+      return
+    }
+
+    setDeleting(true)
+    setDeleteError('')
+    try {
+      const res = await fetch(`/api/stops?id=${encodeURIComponent(selected.id)}`, {
+        method: 'DELETE',
+      })
+      const data = await res.json()
+      if (!res.ok) {
+        setDeleteError(data.error || 'Could not remove that stop. Try again.')
+        return
+      }
+      setCustomStops((prev) => prev.filter((s) => s.id !== selected.id))
+      setSelected(null)
+    } catch {
+      setDeleteError('Could not reach the server. Check your connection and try again.')
+    } finally {
+      setDeleting(false)
+    }
+  }
+
   return (
     <div className={`board${printMode ? ' board--bw' : ''}`}>
       <header className="board__topbar">
@@ -203,7 +234,10 @@ export default function App() {
                   key={f.id}
                   className="card"
                   style={{ borderColor: printMode ? undefined : f.tagColor }}
-                  onClick={() => setSelected(f)}
+                  onClick={() => {
+                    setDeleteError('')
+                    setSelected(f)
+                  }}
                 >
                   <div
                     className="card__tag"
@@ -240,6 +274,19 @@ export default function App() {
             <div className="modal__barcode">
               <Barcode value={selected.barcode} height={80} />
             </div>
+            {selected.custom && (
+              <>
+                {deleteError && <p className="addform__error">{deleteError}</p>}
+                <button
+                  type="button"
+                  className="modal__delete"
+                  onClick={handleDeleteStop}
+                  disabled={deleting}
+                >
+                  {deleting ? 'Removing…' : 'Delete stop'}
+                </button>
+              </>
+            )}
           </div>
         </div>
       )}
