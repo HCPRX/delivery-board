@@ -129,7 +129,7 @@ export default function App() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           id,
-          barcode: form.barcode.trim() || id,
+          barcode: form.barcode.trim(),
           name: form.name.trim(),
           tagLabel: form.tagLabel,
         }),
@@ -334,7 +334,7 @@ export default function App() {
               </label>
 
               <label className="addform__field">
-                Barcode number <span>(optional — defaults to the Stop ID)</span>
+                Barcode number <span>(optional — leave blank to auto-generate one)</span>
                 <input
                   type="text"
                   value={form.barcode}

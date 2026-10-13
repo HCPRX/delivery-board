@@ -831,25 +831,18 @@
     "tagLabel": "Unassigned",
     "tagColor": "#6b7280"
   },
-  {
-    "id": "TAYM-C",
-    "name": "Taylorsville - C",
-    "addr": "6246 S Redwood Rd, Salt Lake City, UT 84123",
-    "barcode": "TAYM-C",
-    "tagLabel": "Central",
-    "tagColor": "#3b82f6"
-  },
-  {
+
+    {
     "id": "TWIN-AL",
     "name": "Twin Oaks - AL",
-    "barcode": "TWIN-AL",
+    "barcode": "000000215992",
     "tagLabel": "Central",
     "tagColor": "#06b6d4"
   },
   {
     "id": "TWIN-MEM",
     "name": "Twin Oaks - Memory",
-    "barcode": "TWIN-MEM",
+    "barcode": "000000216999",
     "tagLabel": "Central",
     "tagColor": "#06b6d4"
   }

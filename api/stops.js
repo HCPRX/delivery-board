@@ -50,6 +50,53 @@ function badRequest(res, message) {
   res.status(400).json({ error: message })
 }
 
+// --- Barcode generation ------------------------------------------------
+//
+// Every real facility barcode in facilities.json is a checksum-valid
+// UPC-A number of the shape 000000XXX99 + check digit — a 5-digit "item
+// number" that always ends in 99, under the pharmacy's own prefix. A stop
+// added through the app with no barcode typed in used to just reuse its
+// ID as the barcode, which renders as a plain Code128 text barcode
+// (Barcode.jsx) instead of a real scannable UPC-A — visually inconsistent
+// with the rest of the board. So: auto-generate the next number in that
+// same sequence, in the same format, so an auto-assigned stop looks and
+// scans exactly like the others. (These are new sequence numbers, not
+// barcodes issued by any outside system — there's no such registry for a
+// brand-new stop — but they follow the house numbering convention
+// exactly, including a correct UPC-A check digit.)
+
+function upcCheckDigit(digits11) {
+  const d = digits11.split('').map(Number)
+  const odd = d[0] + d[2] + d[4] + d[6] + d[8] + d[10]
+  const even = d[1] + d[3] + d[5] + d[7] + d[9]
+  return (10 - ((odd * 3 + even) % 10)) % 10
+}
+
+function makeUpc(payload5) {
+  const body = '000000' + String(payload5).padStart(5, '0')
+  return body + upcCheckDigit(body)
+}
+
+function nextAutoBarcode(existingBarcodes) {
+  const existingSet = new Set(existingBarcodes)
+  let maxPayload = 7499 // one below the lowest real payload (7599)
+  for (const b of existingBarcodes) {
+    if (/^\d{12}$/.test(b)) {
+      const payload = Number(b.slice(6, 11))
+      if (payload % 100 === 99 && payload > maxPayload) maxPayload = payload
+    }
+  }
+  let payload = maxPayload + 100
+  let code = makeUpc(payload)
+  // Extremely unlikely to collide (each candidate is past every known
+  // code), but guard against it anyway rather than assume.
+  while (existingSet.has(code)) {
+    payload += 100
+    code = makeUpc(payload)
+  }
+  return code
+}
+
 // Both POST and DELETE can send an id either as a JSON body or (for DELETE,
 // since some callers prefer not to send a body) a query string — accept
 // either so the frontend has a simple, reliable way to call it.
@@ -79,7 +126,7 @@ export default async function handler(req, res) {
   if (req.method === 'POST') {
     const body = req.body || {}
     const id = String(body.id || '').trim().toUpperCase()
-    const barcode = String(body.barcode || id || '').trim()
+    const typedBarcode = String(body.barcode || '').trim()
     const name = String(body.name || '').trim()
     const tagLabel = String(body.tagLabel || '').trim()
 
@@ -93,6 +140,15 @@ export default async function handler(req, res) {
     if (BASE_IDS.has(id) || stops.some((s) => s.id === id)) {
       return badRequest(res, `A stop called "${id}" already exists.`)
     }
+
+    // Respect a barcode the user typed in themselves (e.g. a real one
+    // already printed on a label) — only auto-generate when left blank.
+    const barcode = typedBarcode
+      ? typedBarcode
+      : nextAutoBarcode([
+          ...baseFacilities.map((f) => f.barcode),
+          ...stops.map((s) => s.barcode),
+        ])
 
     const tagColor = ZONE_COLORS[tagLabel] || '#6b7280'
 
